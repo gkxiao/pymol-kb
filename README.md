@@ -11,15 +11,6 @@ PyMOL Knowledge Base (KB) is designed to assist Large Language Models (LLMs) in 
 | 通用 LLM 生成 | + 本 KB 注入 | 提升效果 |
 |---------------|--------------|----------|
 
-## 📦 快速开始
-
-```bash
-# 克隆知识库
-git clone https://github.com/yourname/pymol-kb.git
-
-# 注入到 Qwen3-30B（轻量级 RAG）
-python inject-kb.py "可视化 density.dx 中 >4.0 的闭合区域" | \
-  curl -s http://localhost:11434/api/generate -d @-
 
 ## 🧱 知识库骨架
 
@@ -31,3 +22,14 @@ python inject-kb.py "可视化 density.dx 中 >4.0 的闭合区域" | \
 03-examples/   # 错误/正确对比
 04-integration/# LLM 集成辅助
 05-tasks/      # 高频任务模板
+
+## 📦 快速开始
+
+```bash
+# 克隆知识库
+git clone https://github.com/yourname/pymol-kb.git
+
+# 注入到 Qwen3-30B（轻量级 RAG）
+python inject-kb.py "可视化 density.dx 中 >4.0 的闭合区域" | \
+  curl -s http://localhost:11434/api/generate -d @-
+```
