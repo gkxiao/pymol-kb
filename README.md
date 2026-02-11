@@ -16,12 +16,14 @@ PyMOL Knowledge Base (KB) is designed to assist Large Language Models (LLMs) in 
 
 采用陷阱 → 概念 → 诊断 → 示例 四层骨架， 也就是"错误优先学习" 原则（先规避陷阱，再构建正确认知），兼顾可维护性、LLM 友好性。
 
+```
 00-traps/      # 陷阱前置（最高优先级）
 01-concepts/   # 原子化概念
 02-diagnostics/# 可执行诊断逻辑
 03-examples/   # 错误/正确对比
 04-integration/# LLM 集成辅助
 05-tasks/      # 高频任务模板
+```
 
 ## 📦 快速开始
 
